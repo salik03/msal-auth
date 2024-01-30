@@ -4,8 +4,6 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { WelcomeName } from "./WelcomeName";
-import { SignInButton } from "./SignInButton";
-import { SignOutButton } from "./SignOutButton";
 import { Link as RouterLink } from "react-router-dom";
 
 import { useIsAuthenticated } from "@azure/msal-react";
@@ -28,7 +26,6 @@ const NavBar = () => {
             Profile
           </Button>
 
-          {isAuthenticated ? <SignOutButton /> : <SignInButton />}
         </Toolbar>
       </AppBar>
     </div>
